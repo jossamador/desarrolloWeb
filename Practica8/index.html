@@ -50,3 +50,56 @@
     <div class="cuadro3D"></div>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica8</title>
+    <style>
+        body {
+            animation: colores 10s infinite;
+        }
+        @keyframes colores {
+            0% {background-color: rgb(102, 170, 210);
+            }
+            25% {background-color: rgb(0, 81, 173);
+            }
+            50% {background-color: rgb(2, 19, 96);
+            }
+            100% {background-color: rgb(0, 0, 0);
+            }
+        }
+
+        .cuadro3D {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            transform-style: preserve-3d; 
+            animation: mover 10s infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translate(0, 0) rotateX(0deg) rotateY(0deg); 
+            }
+            25% {
+                transform: translate(-100px, -100px) rotateX(90deg) rotateY(0deg); 
+            }
+            50% {
+                transform: translate(-100px, -100px) rotateX(90deg) rotateY(90deg); 
+            }
+            100% {
+                transform: translate(0, 0) rotateX(0deg) rotateY(0deg); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cuadro3D"></div>
+</body>
+</html>
